@@ -13,6 +13,10 @@
 <body>
 
     <header>
+
+        <nav>
+            <img src="img\logo.svg" alt="">
+        </nav>
         
 
     </header>
@@ -24,32 +28,43 @@
                 <img src="img\sinister.jpeg" alt="Brano Sinister">
                 <div class="title-control">
                     <h5 class="text-white"><strong>Sinister</strong></h5>
-                    <p class="color-g"><strong>Brano Nome</strong></p>
+                   <a href="#"><p class="color-g"><strong>Brano Nome</strong></p></a> 
                 </div>
-                <a href="#"><i class="fa fa-heart-o color-g" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-folder-o color-g" aria-hidden="true"></i></a>
+                <div>
+                    <a href="#"><i class="far fa-heart color-g"></i></a>
+                    <a href="#"><i class="far fa-folder color-g"></i></a>
+                </div>
+                
             </div>
 
             <div class="bar-control display-flex">
-                <div>
-                <a href="#"><i class="fas fa-random text-white"></i></a>
-                <a href="#"><i class="fa fa-step-backward text-white" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-play-circle-o fa-2x text-white" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-step-forward text-white" aria-hidden="true"></i></a>
-                <a href="#"><i class="fas fa-undo-alt text-white"></i></a>
+                <div class="display-flex">
+                    <a href="#"><i class="fas fa-random text-white"></i></a>
+                    <a href="#"><i class="fas fa-step-backward text-white"></i></i></a>
+                    <a href="#"><i class="fa fa-play-circle-o fa-2x text-white" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fas fa-step-forward text-white"></i></a>
+                    <a href="#"><i class="fas fa-undo-alt text-white"></i></a>
                 </div>
-                <div class="display-flex text-white">
+                <div class="text-white display-flex barretta">
                     <div>0:25</div>
-                    <div class="barra-caricamento">
+                    <div class="barra-caricamento display-flex">
+                        <a href="#"><div class="load-caricamento"></div></a>
+                        <i class="fas fa-circle fa-lg text-white"></i>
                     </div>
                     <div>4:35</div>
                 </div>
-
-                
-        
-
             </div>
 
+
+            <div class="audio-control display-flex">
+                <a href="#"><i class="fas fa-list text-white"></i></a>
+                <a href="#"><i class="fas fa-tv text-white"></i></a>
+                <a href="#"><i class="fas fa-volume-up text-white"></i></a>
+                <div class="barra-audio display-flex">
+                    <a href="#"><div class="audio"></div></a>
+                    <i class="fas fa-circle fa-lg text-white"></i>
+                </div>
+            </div>
 
 
         </section>

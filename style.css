@@ -5,11 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* barra comandi inferiore */
 .display-flex{
     display: flex;
     align-items: center;
 }
-
 .music-controls{
     display: flex;
     height: 90px;
@@ -17,10 +18,10 @@
     padding: 20px 10px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+    justify-content: space-between;
     
 }
-
 .music-controls img{
     height: 50px;
 }
@@ -29,8 +30,12 @@
     font-size: 10px;
 }
 
+.music-controls a{
+    text-decoration: none;
+}
+
 .music-controls i{
-    padding: 5px;
+    padding: 5px ;
 }
 
 .color-g{
@@ -39,7 +44,6 @@
 
 .title-control{
     margin-left:10px ;
-    margin-right: 50px;
 }
 
 .text-white{
@@ -47,17 +51,94 @@
 }
 
 .bar-control{
-    flex-grow: 1;
     justify-content: center;
     flex-direction: column;
+    flex-basis: 500px; 
 }
 
+.barretta{
+    width: 100%;
+}
+
+.barretta div{
+    font-size: 8px;
+}
 .barra-caricamento{
-    width: 500px;
+    width: 100%;
+    height: 5px;
+    background-color:rgb(132, 132, 132) ; 
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+.load-caricamento{
+    height: 5px;
+    width: 100px;
+    background-color:lightgray;
+    border-radius: 10px;
+    margin-right: -10px;
+}
+
+.audio-control{
+    font-size: 10px;
+}
+.barra-audio{
     height: 5px;
     background-color:rgb(132, 132, 132) ;
+    width: 100px;
+    border-radius: 10px;
 }
 
+.audio{
+    height: 5px;
+    width: 50px;
+    background-color:lightgray;
+    border-radius: 10px;
+    margin-right: -10px;
+}
+.barra-caricamento i ,
+.barra-audio i{
+    display: none;
+}
+
+
+
+/* barra comandi in hover */
+
+.music-controls p:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.color-g:hover{
+    color: white;
+}
+.audio:hover,
+.load-caricamento:hover{
+    background-color: greenyellow;
+}
+
+.barra-caricamento:hover i ,
+.barra-audio:hover i{
+    display: inline-block;
+}
+
+.bar-control i:hover{
+    font-size: 35px;
+}
+
+
+/* nav bar */
+nav{
+    background-color: black;
+    width: 200px;
+    height:100vh ;
+    padding: 10px;
+}
+
+nav img{
+    height: 40px;
+}
 
 
 
