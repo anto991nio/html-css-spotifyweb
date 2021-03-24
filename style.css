@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.display-flex{
+    display: flex;
+    align-items: center;
+}
+
+.music-controls{
+    display: flex;
+    height: 90px;
+    background-color: rgb(40, 40, 40);
+    padding: 20px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.music-controls img{
+    height: 50px;
+}
+
+.music-controls p{
+    font-size: 10px;
+}
+
+.music-controls i{
+    padding: 5px;
+}
+
+.color-g{
+    color: rgb(132, 132, 132);
+}
+
+.title-control{
+    margin-left:10px ;
+    margin-right: 50px;
+}
+
+.text-white{
+    color: white;
+}
+
+.bar-control{
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.barra-caricamento{
+    width: 500px;
+    height: 5px;
+    background-color:rgb(132, 132, 132) ;
+}
+
+
+
+
