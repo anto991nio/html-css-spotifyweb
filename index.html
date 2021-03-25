@@ -10,9 +10,9 @@
     <script src="https://kit.fontawesome.com/19c376c668.js" crossorigin="anonymous"></script>
     <title>html-css-spotifyweb</title>
 </head>
-<body>
+<body class="display-flex">
 
-    <header class="display-flex">
+    <header>
         <!-- nav bar laterale -->
         <nav class="display-flex">
             <div>
@@ -67,18 +67,56 @@
             </div>
            
         </nav>
-            <!-- barra upgrade -->
+
+    </header>
+     
+
+    <main >
+           
+           
+           
+        
+        
+        <!-- barra upgrade -->
         <section class="bar-upgrade display-flex centrare">
             <a class="text-white"href="#"><strong>EFFETTUA L'UPGRADE</strong></a> 
         </section>
-    </header>
 
 
-    <main>
+        <!-- sezione album -->
+        <section class="display-flex bg-album">
+                <ul class="lista-no display-flex">
+                    <li><a class="color-g" href="#">IN EVIDENZA </a></li>
+                    <li><a class="color-g" href="#">PODCAST</a></li>
+                    <li><a class="color-g" href="#">CLASSIFICHE</a></li>
+                    <li><a class="color-g" href="#">GENERI E MOOD</a></li>
+                    <li><a class="color-g" href="#">NUOVE USCITE</a></li>
+                    <li><a class="color-g" href="#">SCOPRI</a></li>
+                </ul>
+
+                <h1><strong class="text-white">Recently played</strong></h1>
+                <div class="display-flex immagini-album">
+                    <div><img src="img\metal_lifting.jpg" alt="metal"></div>
+                    <div><img src="img\stranger.jpeg" alt="stranger"></div>
+                    <div><img src="img\aquietplace.jpeg" alt=" a quiet place"></div>
+                    <div><img src="img\split.jpeg" alt="split"></div>
+                    <div><img src="img\cure.jpeg" alt="cure"></div>
+                    <div><img src="img\sinister.jpeg" alt="sinister"></div>
+                </div>
+
+            
+        </section>
+
+
 
         
         
 
+        
+        
+    </main>
+
+    <footer>
         <!-- barra comandi inferiori -->
         <section class="music-controls display-flex">
             <div class="display-flex centrare">
@@ -138,7 +176,7 @@
 
 
         </section>
-    </main>
+    </footer>
     
 </body>
 </html>
