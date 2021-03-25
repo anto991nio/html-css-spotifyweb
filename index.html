@@ -12,8 +12,8 @@
 </head>
 <body>
 
-    <header>
-
+    <header class="display-flex">
+        <!-- nav bar laterale -->
         <nav class="display-flex">
             <div>
                 <img class="logo-immagine" src="img\logo.svg" alt="logo spotify">
@@ -67,12 +67,19 @@
             </div>
            
         </nav>
-        
-
+            <!-- barra upgrade -->
+        <section class="bar-upgrade display-flex centrare">
+            <a class="text-white"href="#"><strong>EFFETTUA L'UPGRADE</strong></a> 
+        </section>
     </header>
 
 
     <main>
+
+        
+        
+
+        <!-- barra comandi inferiori -->
         <section class="music-controls display-flex">
             <div class="display-flex centrare">
                 <img src="img\sinister.jpeg" alt="Brano Sinister">
@@ -81,25 +88,53 @@
                    <a href="#"><p class="color-g"><strong>Brano Nome</strong></p></a> 
                 </div>
                 <div>
-                    <a href="#"><i class="far fa-heart color-g"></i></a>
+                    <a  href="#"><i class="far fa-heart color-g"></i></a>
                     <a href="#"><i class="far fa-folder color-g"></i></a>
                 </div>
                 
             </div>
 
-            <div class="audio-control display-flex">
-                <a href="#"><i class="fas fa-list text-white"></i></a>
-                <a href="#"><i class="fas fa-tv text-white"></i></a>
-                <a href="#"><i class="fas fa-volume-up text-white"></i></a>
-                <div class="barra-audio display-flex">
-                    <a href="#"><div class="audio"></div></a>
-                    <i class="fas fa-circle fa-lg text-white"></i>
+            <!-- comandi tempo -->
+            <div class="barra-caricamento display-flex ">
+                <div class="comandi">
+                   <a class="text-white" href="#"><i class="fas fa-random"></i></a>   
+                   <a class="text-white"href="#"><i class="fas fa-step-backward"></i></a>
+                   <a class="text-white"href="#"><i class="far fa-play-circle"></i></a> 
+                   <a class="text-white"href="#"><i class="fas fa-step-forward"></i></a> 
+                   <a class="text-white"href="#"><i class="fas fa-undo-alt"></i></a> 
                 </div>
+                <a href="#">
+                    <div class="centrare display-flex barretta">
+                        <div class="text-white">00:25</div>
+                            <div class="load display-flex centrare">
+                                <div class="load-caricato"></div>
+                                <i class="fas fa-circle text-white"></i>
+                             </div>
+                           
+                        <div class="text-white">4:35</div>
+                    </div>
+                </a>
+                
+
             </div>
 
-            <div>
-                
+            <!-- comandi audio -->
+            <div class="audio-control display-flex centrare">
+                <div class="display-flex">
+                    <a href="#"><i class="fas fa-list text-white"></i></a>
+                    <a href="#"><i class="fas fa-tv text-white"></i></a>
+                    <a href="#"><i class="fas fa-volume-up text-white"></i></a>
+                </div>
+
+                <a href="#">
+                    <div class="barra-audio display-flex centrare">
+                        <div class="audio"></div>
+                        <i class="fas fa-circle text-white"></i>
+                    </div>
+                </a>
             </div>
+
+            
 
 
         </section>

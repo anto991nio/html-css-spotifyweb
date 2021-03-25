@@ -6,11 +6,30 @@
 }
 
 
+/* barra upgrade */
+
+ .bar-upgrade{
+    height: 90px;
+    background-color: rgb(8, 11, 18);
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.bar-upgrade a{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 20px;
+
+}
+
+/* barra upgrade hover */
+
+.bar-upgrade a:hover{
+    font-size: 20px;
+}
+ 
+
 /* barra comandi inferiore */
-
-
-
-
 
 .music-controls{
     display: flex;
@@ -49,6 +68,84 @@
 .title-control{
     margin-left:10px ;
 }
+
+.barra-caricamento{
+    flex-grow: 1;
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+}
+
+.comandi{
+    min-width: 150px;
+}
+
+.load
+{
+    flex-grow: 1;
+    height: 5px;
+    background-color: rgb(132, 132, 132);
+    border-radius: 10px;
+    margin:0 10px  ;
+}
+
+.load-caricato{
+    background-color: white;
+    width: 30%;
+    height: 5px;
+    margin-right: -10px;
+    border-radius: 10px;
+}
+
+.barretta{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.audio-control{
+    font-size: 10px;
+}
+
+.barra-audio{
+    width: 100px;
+    height: 5px;
+    background-color: rgb(132, 132, 132);
+    border-radius: 10px;
+}
+
+.audio{
+    background-color: white;
+    width: 40px;
+    height: 5px;
+    margin-right: -10px;
+    border-radius: 10px;
+}
+
+.load .fas,
+.barra-audio .fas{
+    display: none;
+}
+
+
+
+
+/* barra comandi inferiori hover */
+
+.load-caricato:hover + .fas,
+.audio:hover + .fas{
+    display: inline-block;
+}
+
+.load-caricato:hover,
+.audio:hover{
+    background-color: greenyellow;
+}
+
+.comandi a:hover{
+    font-size: 20px;
+}
+
+
 
 
 
@@ -162,8 +259,9 @@ nav h4{
 
 @media all and (max-width: 768px){
 
+    /*  media nav bar */
     .playlist,
-    strong,
+    nav strong,
     .logo-immagine{
         display: none;
     }
@@ -192,7 +290,6 @@ nav h4{
     }
 
 }
-
 
 
 
