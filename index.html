@@ -12,9 +12,10 @@
 </head>
 <body class="display-flex">
 
+
     <header>
         <!-- nav bar laterale -->
-        <nav class="display-flex">
+        <nav class="display-flex wrapper">
             <div>
                 <img class="logo-immagine" src="img\logo.svg" alt="logo spotify">
                 <img class="logo-immagine-2" src="img\logo-small.svg" alt="logo">
@@ -71,7 +72,7 @@
     </header>
      
 
-    <main >
+    <main class="wrapper">
            
            
            
@@ -84,7 +85,12 @@
 
 
         <!-- sezione album -->
+        
+
         <section class="display-flex bg-album">
+
+            <section>
+
                 <ul class="lista-no display-flex">
                     <li><a class="color-g" href="#">IN EVIDENZA </a></li>
                     <li><a class="color-g" href="#">PODCAST</a></li>
@@ -93,19 +99,120 @@
                     <li><a class="color-g" href="#">NUOVE USCITE</a></li>
                     <li><a class="color-g" href="#">SCOPRI</a></li>
                 </ul>
+    
+            </section>
 
+            <div>
                 <h1><strong class="text-white">Recently played</strong></h1>
-                <div class="display-flex immagini-album">
-                    <div><img src="img\metal_lifting.jpg" alt="metal"></div>
-                    <div><img src="img\stranger.jpeg" alt="stranger"></div>
-                    <div><img src="img\aquietplace.jpeg" alt=" a quiet place"></div>
-                    <div><img src="img\split.jpeg" alt="split"></div>
-                    <div><img src="img\cure.jpeg" alt="cure"></div>
-                    <div><img src="img\sinister.jpeg" alt="sinister"></div>
+                <div class="display-flex immagini-album spazio">
+                    <div>
+                        <div class="posizione">
+                            <a href="#"><img src="img\metal_lifting.jpg" alt="metal"><i class="far fa-play-circle text-white fa-4x"></i></a> 
+                            <h3><strong class="text-white">Heavy metal</strong></h3>
+                            <p><strong class="color-g">Subtitle</strong></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posizione">
+                            <a href="#"><img src="img\stranger.jpeg" alt="stranger"><i class="far fa-play-circle text-white fa-4x"></i></a> 
+                            <h3><strong class="text-white">Stranger Thing, Vol. 1 (a Netflix Original Series Soundtrack)</strong></h3>
+                            <p><strong class="color-g">Kyle Dixon & Michael Stein</strong></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="posizione">
+                            <a href="#"><img src="img\aquietplace.jpeg" alt=" a quiet place"><i class="far fa-play-circle text-white fa-4x"></i></a> 
+                            <h3><strong class="text-white">A quiet place</strong></h3>
+                            <p><strong class="color-g">Subtitle</strong></p>
+    
+                        </div>
+                    </div>
+                   <div>
+                    <div class="posizione">
+                        <a href="#"><img src="img\split.jpeg" alt="split"><i class="far fa-play-circle text-white fa-4x"></i></a>  
+                        <h3><strong class="text-white">Split</strong></h3>
+                        <p><strong class="color-g">Subtitle</strong></p>
+                    </div>
+                   </div>
+                    <div>
+                        <div class="posizione">
+                            <a href="#"><img src="img\cure.jpeg" alt="cure"><i class="far fa-play-circle text-white fa-4x"></i></a> 
+                            <h3><strong class="text-white">A cure for wellness</strong></h3>
+                            <p><strong class="color-g">Subtitle</strong></p>
+                        </div>
+                    </div>
+                   <div>
+                    <div class="posizione">
+                        <a href="#"><img src="img\sinister.jpeg" alt="sinister"><i class="far fa-play-circle text-white fa-4x"></i></a> 
+                        <h3><strong class="text-white">Sinister</strong></h3>
+                        <p><strong class="color-g">Subtitle</strong></p>
+                    </div>
+                   </div>
+                    
                 </div>
+            </div>
+               
+            <div>
+                <div class="titolo">
+                    <h1><strong class="text-white">Creato per John Doe</strong></h1>
+                    <p><strong class="color-g">Più ascoltati, più accurati saranno i suggerimenti</strong></p>
+                </div>
+                <div class="display-flex immagini-album seconda-playlist">
+                    <div>
+                        <div class="posizione">
+                            <a href="#"><img src="img\radar.jpeg" alt="metal"><i class="far fa-play-circle text-white fa-4x"></i></a>
+                            <h3><strong class="text-white">Release Radar</strong></h3>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="posizione">
+                            <a href="#"><img src="img\mixdaily.jpeg" alt="stranger"><i class="far fa-play-circle text-white fa-4x"></i></a> 
+                            <h3><strong class="text-white">Daily Mix 1</strong></h3>
+                        </div>
+                    </div>
+                    
 
-            
+            </div>
+                
+            <div>
+                <div class="titolo ">
+                    <h1><strong class="text-white">Artisti più popolari</strong></h1>
+                    <p><strong class="color-g">Più ascoltati, più accurati saranno i suggerimenti</strong></p>
+                </div>
+                <div class="display-flex immagini-album seconda-playlist">
+                    <div>
+                        <div class="tondo ">
+                            <a href="#"><img src="img\youg.jpeg" alt="metal"> 
+                            <i class="far fa-play-circle text-white fa-4x"></i> </a> 
+                        </div>
+                        <div>
+                                <h3><strong class="text-white">Lana del Rey</strong></h3>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        
+                            <div class="tondo">
+                                <a href="#"> <img src="img\einaudi.jpeg" alt="einaudi">  
+                                <i class="far fa-play-circle text-white fa-4x"></i>
+                                </a>
+                            </div>
+
+                        <div>
+                            <h3><strong class="text-white">Ludovico Einaudi</strong></h3>
+                        </div>
+                    </div>
+                    
+                    
+            </div>
+               
+                    
         </section>
+
+     
+           
+        
 
 
 
@@ -115,6 +222,7 @@
         
         
     </main>
+
 
     <footer>
         <!-- barra comandi inferiori -->

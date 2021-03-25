@@ -32,17 +32,25 @@ main{
 }
  
 
-
+.wrapper {
+    height: calc(100vh - 90px);
+}
 
 /* nav bar */
 nav{
     background-color: black;
     width: 200px;
-    height: calc(100vh - 90px);
+    height: 100%;
     padding: 10px;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+}
+
+.bg-album {
+    height: 100%;
+    overflow: auto;
+    
 }
 
 .logo-immagine{
@@ -132,7 +140,8 @@ nav h4{
 
 /* nav bar in hover */
 
-.color-g:hover{
+nav .color-g:hover,
+.music-controls .color-g:hover{
     color: white;
 }
 
@@ -147,6 +156,7 @@ nav h4{
     width: 100%;
     padding: 15px;
     flex-direction: column;
+    padding-bottom: 105px;
 }
 
 h1 {
@@ -168,19 +178,71 @@ h1 {
     font-weight: bold;
     margin: 20px 20px;
 }
-.immagini-album{
+.spazio{
     justify-content: space-around;
 }
 .immagini-album div{
     flex-basis: 190px;
     flex-shrink: 2;
     margin: 5px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .immagini-album img{
     width: 100%;
 
 }
+
+.immagini-album h3{
+    padding: 10px;
+}
+
+.titolo {
+    line-height: 5px;
+    margin: 100px 0 30px 0;
+}
+
+.titolo p{
+    font-size: 12px;
+}
+
+.tondo{
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+.posizione{
+    position: relative;
+    height: 190px;
+}
+
+
+
+/* sezione album hover */
+
+.immagini-album img:hover{
+    opacity: 0.4;
+}
+
+.immagini-album i {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+}
+
+.immagini-album img:hover + i{
+    display: inline-block;
+} 
+
+
+
 
 /* barra comandi inferiore */
 
