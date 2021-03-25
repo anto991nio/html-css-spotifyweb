@@ -86,7 +86,10 @@ nav h4{
     margin-top: 10px;
     margin-bottom: 5px;
 }
-
+.scroll {
+    overflow: auto;
+    padding-bottom: 300px;
+}
 .bg-gray{
     background-color: rgb(132, 132, 132);
     
@@ -183,7 +186,6 @@ h1 {
 }
 .immagini-album div{
     flex-basis: 190px;
-    flex-shrink: 2;
     margin: 5px;
     text-align: center;
     font-size: 12px;
@@ -200,7 +202,7 @@ h1 {
 
 .titolo {
     line-height: 5px;
-    margin: 100px 0 30px 0;
+    margin: 50px 0 30px 0;
 }
 
 .titolo p{
@@ -240,6 +242,10 @@ h1 {
 .immagini-album img:hover + i{
     display: inline-block;
 } 
+
+.bg-album .color-g:hover{
+    color: white;
+}
 
 
 
