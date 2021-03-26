@@ -211,16 +211,19 @@ h1 {
 
 .tondo{
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
+    max-height: 180px;
+    flex-basis: 180px;
     overflow: hidden;
     position: relative;
+    
 }
 
 .posizione{
     position: relative;
-    max-height: 190px;
+    flex-basis: 190px;
+    flex-shrink: 1;
 }
+
 
 
 
@@ -412,6 +415,10 @@ h1 {
       .immagini-album{
         flex-wrap: wrap;
 
+    }
+
+    .collasso{
+        display: none;
     }
 }
 
