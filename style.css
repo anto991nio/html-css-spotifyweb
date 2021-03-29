@@ -77,6 +77,8 @@ nav img{
     text-decoration: none;
 }
 
+
+
 .text-white{
     color: white;
     text-decoration: none;
@@ -142,7 +144,6 @@ nav h4{
     margin-top: 10px;
 }
 
-
 /* nav bar in hover */
 
 nav .color-g:hover,
@@ -150,7 +151,8 @@ nav .color-g:hover,
     color: white;
 }
 
-.playlist .bg-gray:hover{
+.playlist .bg-gray:hover,
+.nocoll:hover{
     background-color: white;
 }
 
@@ -208,7 +210,6 @@ h1 {
 .titolo p{
     font-size: 12px;
 }
-
 .tondo{
     border-radius: 50%;
     max-height: 180px;
@@ -217,16 +218,11 @@ h1 {
     position: relative;
     
 }
-
 .posizione{
     position: relative;
     flex-basis: 190px;
     flex-shrink: 1;
 }
-
-
-
-
 
 /* sezione album hover */
 
@@ -250,9 +246,6 @@ h1 {
 .bg-album .color-g:hover{
     color: white;
 }
-
-
-
 
 /* barra comandi inferiore */
 
@@ -322,23 +315,19 @@ h1 {
     margin-right: -10px;
     border-radius: 10px;
 }
-
 .barretta{
     font-size: 10px;
     margin-top: 10px;
 }
-
 .audio-control{
     font-size: 10px;
 }
-
 .barra-audio{
     width: 100px;
     height: 5px;
     background-color: rgb(132, 132, 132);
     border-radius: 10px;
 }
-
 .audio{
     background-color: white;
     width: 40px;
@@ -346,68 +335,51 @@ h1 {
     margin-right: -10px;
     border-radius: 10px;
 }
-
 .load .fas,
 .barra-audio .fas{
     display: none;
 }
 
-
-
-
 /* barra comandi inferiori hover */
-
 .load-caricato:hover + .fas,
 .audio:hover + .fas{
     display: inline-block;
 }
-
 .load-caricato:hover,
 .audio:hover{
     background-color: greenyellow;
 }
-
 .comandi a:hover{
     font-size: 20px;
 }
 
-
-
 @media all and (max-width: 768px){
-
     /*  media nav bar */
     .playlist,
     nav strong,
-    .logo-immagine{
+    .logo-immagine,
+    .none{
         display: none;
     }
-
     nav{
         width: 50px;
         padding: 10px;
     }
-
     .logo-immagine-2{
         display: block;
     }
-
     .download img{
         position: relative;
         left: 50%;
         transform: translateX(-50%);
     }
-
     .account{
         border: none;
     }
-
     .account img{
        margin-left: 2px;
     }
-
-
 }
-
 @media all and (max-width: 990px){
 
       /* sezione album */
